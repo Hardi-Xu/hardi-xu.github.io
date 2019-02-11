@@ -334,6 +334,24 @@
         
             
         
+        
+        <!-- {% elseif theme.gitalk.enable %} -->
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '227eb6c3b40c9c1a8de6',
+        clientSecret: '6301bfbb0774ea5762caff8a77e6bc857b4b806a',
+        id: window.location.pathname,
+        repo: 'hardi-xu.github.io',
+        owner: 'Hardi-Xu',
+        admin: 'Hardi-Xu'
+    })
+    gitalk.render('gitalk-container')
+</script>
+        <!-- {% endif %} -->
+
     </div>
 </article>
 
